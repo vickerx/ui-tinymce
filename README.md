@@ -30,7 +30,7 @@ We use [bower](http://twitter.github.com/bower/) for dependency management.  Add
 
 ```
 dependencies: {
-"angular-ui-tinymce": "latest"
+"angular-ui-tinymce": "https://github.com/vickerx/ui-tinymce.git"
 }
 ```
 
