@@ -167,7 +167,8 @@ angular.module('ui.tinymce', [])
           if (tinyInstance &&
             tinyInstance.getDoc()
           ) {
-            tinyInstance.setContent(viewValue);
+            // fixed format ，set and get is same format
+            tinyInstance.setContent(viewValue, {format:options.format});
             // Triggering change event due to TinyMCE not firing event &
             // becoming out of sync for change callbacks
             tinyInstance.fire('change');
